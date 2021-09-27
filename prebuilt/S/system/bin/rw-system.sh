@@ -382,3 +382,4 @@ if getprop ro.vendor.build.fingerprint | grep -qiE '^samsung/' && [ "$vndk" -ge 
 fi
 
 setprop ro.product.first_api_level "$vndk"
+rm -rf /data/system/storage.xml
