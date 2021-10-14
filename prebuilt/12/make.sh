@@ -5,9 +5,10 @@ romdir=$2
 thispath=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
 
 # Deal with non-flattened apex
-$thispath/../../scripts/apex_extractor.sh $1/apex
-$thispath/../../scripts/apex_extractor.sh $1/system_ext/apex
-echo "ro.apex.updatable=false" >> $1/product/etc/build.prop
+$thispath/../../scripts/apex12_extractor.sh $1/apex
+#$thispath/../../scripts/apex12_extractor.sh $1/system_ext/apex
+echo "ro.apex.updatable=true" >> $1/product/etc/build.prop
+rm -rf $1/apex/*/
 
 # Copy system files
 rsync -ra $thispath/system/ $systempath
@@ -21,9 +22,7 @@ mkdir -p $1/product/overlay
 
 cp -fpr $thispath/nondevice_overlay/* $1/product/overlay/
 
-if [ -f $romdir/NODEVICEOVERLAY ]; then
-    echo "Using device specific overlays is not supported in this rom. Skipping..."
-else
+if [[ ! -f "$romdir/NODEVICEOVERLAY" ]]; then
     cp -fpr $thispath/overlay/* $1/product/overlay/
 fi
 
@@ -77,3 +76,7 @@ echo "debug.sf.high_fps_early_phase_offset_ns=" >> $1/product/etc/build.prop
 echo "debug.sf.high_fps_early_gl_phase_offset_ns=" >> $1/product/etc/build.prop
 echo "debug.sf.high_fps_early_app_phase_offset_ns=" >> $1/product/etc/build.prop
 echo "debug.sf.high_fps_early_gl_app_phase_offset_ns=" >> $1/product/etc/build.prop
+
+# random fix for decryption
+echo "rm -rf /data/system/storage.xml" >> $1/bin/cppreopts.sh
+rm -rf $1/product/etc/security/avb
