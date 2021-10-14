@@ -3,7 +3,7 @@
 systempath=$1
 thispath=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
 
-# Nuke MIUI useless app apks
+# Nuke MIUI useless system apks
 rm -rf $1/app/Cit
 rm -rf $1/app/MiuiCompass
 rm -rf $1/app/MiuiVideoGlobal
@@ -91,8 +91,6 @@ rm -rf $1/app/GFTest
 rm -rf $1/app/ModemLog
 rm -rf $1/app/SensorTestTool
 rm -rf $1/app/CameraTest
-
-# Nuke MIUI useless priv-app apks
 rm -rf $1/priv-app/Backup
 rm -rf $1/priv-app/Browser
 rm -rf $1/priv-app/Calendar
@@ -179,7 +177,7 @@ rm -rf $1/data-app/MiDrive
 rm -rf $1/data-app/com.eg.android.AlipayGphone
 rm -rf $1/data-app/MiCreditInStub
 
-# Nuke MIUI useless product/app apks
+# Nuke MIUI useless product apks
 rm -rf $1/product/app/Gmail2
 rm -rf $1/product/app/GoogleTTS
 rm -rf $1/product/app/Maps
@@ -191,8 +189,6 @@ rm -rf $1/product/app/CalendarGoogle
 rm -rf $1/product/app/Chrome
 rm -rf $1/product/app/ModuleMetadataGooglePrebuilt
 rm -rf $1/product/app/GoogleOne
-
-# Nuke MIUI useless product/priv-app apks
 rm -rf $1/product/priv-app/Velvet
 rm -rf $1/product/priv-app/CarrierServices
 rm -rf $1/product/priv-app/AndroidAutoStub
@@ -202,16 +198,3 @@ rm -rf $1/product/priv-app/HotwordEnrollmentXGoogleHEXAGON
 rm -rf $1/product/priv-app/GoogleAssistant
 rm -rf $1/product/priv-app/GoogleFeedback
 rm -rf $1/product/priv-app/QAS_DVC_MSP
-
-# Nuke MIUI useless system_ext/app apks
-rm -rf $1/system_ext/app/xdivert
-rm -rf $1/system_ext/app/DeviceInfo
-rm -rf $1/system_ext/app/atfwd
-rm -rf $1/system_ext/app/embms
-rm -rf $1/system_ext/app/DeviceStatisticsService
-rm -rf $1/system_ext/app/FM
-rm -rf $1/system_ext/app/QdcmFF
-
-# Nuke MIUI useless system_ext/priv-app apks
-rm -rf $1/system_ext/priv-app/EmergencyInfo
-rm -rf $1/system_ext/priv-app/GoogleFeedback
