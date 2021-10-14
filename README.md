@@ -14,9 +14,9 @@
 ### You too, reading this, yes you can Fork this for your use but don't forget credits kek.
 
 ## Downloads "NipponGSIs"
-Download links: https://sourceforge.net/projects/nippongsi/files/  
-Join us in telegram!: https://t.me/nippongsi_support  
-For updates follow channel: https://t.me/nippongsi  
+Download links: https://sourceforge.net/projects/anantgsi/files/  
+Join us in telegram!: https://t.me/anantgsi_support  
+For updates follow channel: https://t.me/anantgsi  
 
 ## Requirements
     Linux
