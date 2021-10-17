@@ -116,6 +116,8 @@ else
     SRCTYPENAME=$SRCTYPE
 fi
 
+echo "Updating tools"
+"$PROJECT_DIR"/update.sh &> /dev/null
 DOWNLOAD()
 {
     URL="$1"
