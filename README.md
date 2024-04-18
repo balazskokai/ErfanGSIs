@@ -1,22 +1,11 @@
 # Erfan GSIs OEM's and AOSP Porting Script Project
 
-### #Credits#
-#### Erfan Abdi: https://github.com/erfanoabdi  
-#### Pierre-Hugues HUSSON: https://github.com/phhusson  
-#### Jamie https://github.com/JamieHoSzeYui  
-#### Xiaoxindada: https://github.com/xiaoxindada  
-#### Velosh: https://github.com/Velosh  
-#### Sheikh Adnan: https://github.com/ElytrA8  
-#### VegaZS: https://github.com/VegaBobo  
-#### HeliOS: https://github.com/issacabraham-git  
-#### Amy: https://github.com/00p513-dev  
-
 ### You too, reading this, yes you can Fork this for your use but don't forget credits kek.
 
 ## Downloads "NipponGSIs"
-Download links: https://sourceforge.net/projects/anantgsi/files/  
-Join us in telegram!: https://t.me/anantgsi_support  
-For updates follow channel: https://t.me/anantgsi  
+Download links: [https://sourceforge.net/projects/anantgsi/files/ ](https://sourceforge.net/projects/nugu/files/) 
+Join us in telegram!: https://t.me/nugugroup  
+For updates follow channel: https://t.me/nugupdates 
 
 ## Requirements
     Linux
