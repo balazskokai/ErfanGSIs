@@ -28,10 +28,10 @@ description=$(grep -oP "(?<=^ro.build.description=).*" -hs "$SYSTEMDIR"/build*.p
 [[ -z "${description}" ]] && description=$(grep -oP "(?<=^ro.system.build.description=).*" -hs "$SYSTEMDIR"/build*.prop)
 [[ -z "${description}" ]] && description="$flavor $release $id $incremental $tags"
 
-printf "```Android Version: $release
+printf "Android Version: $release
 Brand: $brand
 Model: $model
 Codename: $codename
 Security Patch: $spl
-Fingerprint: $fingerprint```
+Fingerprint: $fingerprint
 "
